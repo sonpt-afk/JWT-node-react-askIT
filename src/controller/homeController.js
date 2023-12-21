@@ -1,11 +1,12 @@
-const getHomepage = (req, res) => {
-  res.send("Hello World vs sonit!");
+const handleHelloWorld = (req, res) => {
+  return res.render("home.ejs");
 };
 
-const getWindow = (req, res) => {
-  res.render("sample.ejs");
+const handleUserPage = (req, res) => {
+  return res.render("user.ejs");
 };
+
 module.exports = {
-  getHomepage,
-  getWindow,
+  handleHelloWorld,
+  handleUserPage,
 };
